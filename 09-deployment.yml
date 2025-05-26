@@ -5,7 +5,13 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  minReadySeconds: 30
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  replicas: 5
   selector:
     matchLabels:
       app: nginx
