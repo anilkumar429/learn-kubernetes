@@ -32,4 +32,4 @@ spec:
 # In kubernetes we always maintain unique labels in pod labels.
 # kubectl edit pod <podname> edit the pod
 # kubectl scale replicaset/frontend --replicas=10
-# kubectl annotate pod <pod name> controller.kubernetes.io/pod-deletion-cost=1000
+# kubectl annotate pod <pod name> controller.kubernetes.io/pod-deletion-cost=1000  leat annonate number pod will be deleted when you scale down pods
