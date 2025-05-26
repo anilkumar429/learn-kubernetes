@@ -59,3 +59,5 @@ spec:
       image: testxyz
       ports:
         - containerPort: 80
+
+## kubectl get pods --field-selector status.phase=Running
