@@ -22,3 +22,4 @@ spec:
       effect: "NoSchedule"
 
 
+##kubectl cordon nodename -- If you deploy pod on cordon node, it wont deploy. It will show as pending
